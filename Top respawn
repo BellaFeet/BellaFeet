@@ -7,16 +7,6 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "Created by: Isabella";
 })
 
-game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "TOP Reset";
-        Text = "How to use:";
-        })
-
-game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Keybinds";
-        Text = "L to revive self. K to teleport out.";
-        })
-
 local lplr = game:GetService("Players").LocalPlayer
 local mouse = lplr:GetMouse()
 
