@@ -2,10 +2,6 @@
 --(By: helpguestslikeme)--
 --(Version 2.1)--
 
-game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Thank You For Using This Script!";
-	Text = "Created by: Isabella";
-})
 
 local lplr = game:GetService("Players").LocalPlayer
 local mouse = lplr:GetMouse()
