@@ -1,8 +1,8 @@
 prefix = {'1'};
 
 movesetup = {
-'TS Molotov','Blaster Meteor','Anger Rush','Meteor Crash',
-'Demon Flash','Wolf Fang Fist','Neo Wolf Fang Fist','Punisher Drive'
+'TS Molotov','Trash???','Anger Rush','Meteor Crash',
+'Kick Barrage','Wolf Fang Fist','Neo Wolf Fang Fist','Flash Skewer','Mach Kick'
 };
 
 lplr=game.Players.LocalPlayer;
