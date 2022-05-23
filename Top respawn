@@ -4,7 +4,7 @@
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Thank You For Using This Script!";
-	Text = "Created by: helpguestslikeme#1470";
+	Text = "Created by: Isabella";
 })
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
