@@ -1,4 +1,4 @@
-prefix = {'k'};
+prefix = {'1'};
 
 movesetup = {
 'TS Molotov','Blaster Meteor','Anger Rush','Meteor Crash',
