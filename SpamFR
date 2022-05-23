@@ -1,3 +1,7 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Press 1";
+	Text = "Created by: Isabella";
+})
 prefix = {'1'};
 
 movesetup = {
