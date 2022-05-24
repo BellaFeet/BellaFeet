@@ -1,6 +1,6 @@
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Bella's Power";
-    Text = "Put Dragon Throw on 'Y'";
+    Text = "Move spam Press 1";
     })
 
 
