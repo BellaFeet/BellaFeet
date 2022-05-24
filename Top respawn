@@ -2,6 +2,11 @@
 --(By: helpguestslikeme)--
 --(Version 2.1)--
 
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Press L";
+	Text = "Created by: Isabella";
+})
+
 local plr = game:GetService("Players").LocalPlayer
 game.Workspace:WaitForChild("Live")
 game.Workspace.Live:WaitForChild(plr.Name)
@@ -9,10 +14,6 @@ local Char = plr.Character
 local portal = game.workspace["Wormhole"]
 local Mouse = plr:GetMouse()
 
-game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Press L";
-	Text = "Created by: Isabella";
-})
 
 local lplr = game:GetService("Players").LocalPlayer
 local mouse = lplr:GetMouse()
