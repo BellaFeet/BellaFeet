@@ -1,9 +1,3 @@
-game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "Bella's Powers";
-		Text = "Respawning..";
-	})
-end
-
 prefix = {'1'};
 
 movesetup = {
