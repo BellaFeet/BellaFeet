@@ -1,14 +1,7 @@
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Bella's Power";
-    Text = "Put Dragon Throw In 'Y'";
+    Text = "Put Dragon Throw on 'Y'";
     })
-    wait(.2)
-
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "How to";
-        Text = "Press J Then L";
-        })
-    
 
 
 local plr = game:GetService("Players").LocalPlayer
@@ -23,8 +16,8 @@ game:GetService("RunService").RenderStepped:connect(
     function()
 Mouse.KeyDown:connect(function(Key)
     Key = Key:lower()
-    if Key == "j" then
-        game:GetService("TweenService"):Create(
+    if Key == "y" then
+       wait(1) game:GetService("TweenService"):Create(
            game.Players.LocalPlayer.Character.HumanoidRootPart,
            TweenInfo.new(1.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),
            {CFrame = CFrame.new(2656.7854, 3946.00439, -2515.78467, 0.969526529, 0, -0.244986445, -0, 1, -0, 0.244986445, 0, 0.969526529)}
@@ -35,7 +28,7 @@ end)
 
 
         function respawnx()
-            local args = {
+           wait(4) local args = {
                 [1] = workspace.FriendlyNPCs:FindFirstChild("Hair Stylist")
                 }
             game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(unpack(args))
@@ -57,7 +50,7 @@ end)
            
 Mouse.KeyDown:connect(function(Key)
                 Key = Key:lower()
-            if Key == "l" then
+            if Key == "y" then
             respawnx()
             end
 end)
