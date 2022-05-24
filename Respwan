@@ -1,0 +1,87 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Bella's Power";
+    Text = "Put Dragon Throw In 'Y'";
+    })
+    wait(.2)
+
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "How to";
+        Text = "Press J Then L";
+        })
+    
+
+
+local plr = game:GetService("Players").LocalPlayer
+game.Workspace:WaitForChild("Live")
+game.Workspace.Live:WaitForChild(plr.Name)
+local Char = plr.Character
+local portal = game.workspace["Wormhole"]
+local Mouse = plr:GetMouse()
+
+
+game:GetService("RunService").RenderStepped:connect(
+    function()
+Mouse.KeyDown:connect(function(Key)
+    Key = Key:lower()
+    if Key == "j" then
+        game:GetService("TweenService"):Create(
+           game.Players.LocalPlayer.Character.HumanoidRootPart,
+           TweenInfo.new(1.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),
+           {CFrame = CFrame.new(2656.7854, 3946.00439, -2515.78467, 0.969526529, 0, -0.244986445, -0, 1, -0, 0.244986445, 0, 0.969526529)}
+           ):Play()
+    end
+end)
+end)
+
+
+        function respawnx()
+            local args = {
+                [1] = workspace.FriendlyNPCs:FindFirstChild("Hair Stylist")
+                }
+            game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(unpack(args))
+                wait(.3)
+            local args = {
+                [1] = {
+                        [1] = "Yes"
+                    }
+                }
+            
+            game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(unpack(args))
+                wait(.3)
+            local args = {
+                [1] = "woah"
+                }
+            game:GetService("Players").LocalPlayer.Backpack.HairScript.RemoteEvent:FireServer(unpack(args))
+            end
+            
+           
+Mouse.KeyDown:connect(function(Key)
+                Key = Key:lower()
+            if Key == "l" then
+            respawnx()
+            end
+end)
+
+Mouse.KeyDown:connect(function(Key)
+    Key = Key:lower()
+if Key == "y" then
+wait(.2)
+    Char["Dragon Throw"]:Activate()
+    wait(.2)
+    Char["Dragon Throw"]:Deactivate()
+    Char["Dragon Throw"].Parent = plr.Backpack
+end
+end)
+
+game:service'RunService'.RenderStepped:connect(function()
+    pcall(function()
+        game:GetService("Workspace").Wormhole:Destroy()
+      game.Players.LocalPlayer.Character.Action:Destroy()
+    end)
+  end)
+
+  game:service'RunService'.RenderStepped:connect(function()
+    pcall(function()
+        game.Workspace.Live[plr.Name]["Dragon Throw"].Activator["Flip"]:Destroy()
+    end)
+  end)
