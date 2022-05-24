@@ -3,6 +3,13 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     Text = "Move spam Press 1";
     })
 
+local plr = game:GetService("Players").LocalPlayer
+game.Workspace:WaitForChild("Live")
+game.Workspace.Live:WaitForChild(plr.Name)
+local Char = plr.Character
+local portal = game.workspace["Wormhole"]
+local Mouse = plr:GetMouse()
+
 
 prefix = {'1'};
 
