@@ -40,5 +40,5 @@ end;
 mouse.KeyDown:connect(function(key)
    if key==prefix[1] then spam=not spam;
       movespamfunction()
-   end)
+   end;
 end)
