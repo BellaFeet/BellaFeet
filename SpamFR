@@ -1,3 +1,9 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Bella's Powers";
+		Text = "Press 1";
+	})
+end
+
 prefix = {'1'};
 
 movesetup = {
