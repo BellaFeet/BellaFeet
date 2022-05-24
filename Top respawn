@@ -10,7 +10,7 @@ local portal = game.workspace["Wormhole"]
 local Mouse = plr:GetMouse()
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Press L then K";
+	Title = "Press L";
 	Text = "Created by: Isabella";
 })
 
