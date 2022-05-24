@@ -1,6 +1,6 @@
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Bella's Power";
-    Text = "Move spam Press 1";
+    Text = "Move spam Press 6";
     })
 
 local plr = game:GetService("Players").LocalPlayer
