@@ -28,7 +28,7 @@ end)
 
 
         function respawnx()
-           wait(4) local args = {
+           wait(5) local args = {
                 [1] = workspace.FriendlyNPCs:FindFirstChild("Hair Stylist")
                 }
             game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(unpack(args))
