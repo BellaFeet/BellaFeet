@@ -3,29 +3,21 @@
 --(Version 2.1)--
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Press L";
-	Text = "Created by: Isabella";
+	Title = "Bella's Power";
+	Text = "Press J";
 })
-
-local plr = game:GetService("Players").LocalPlayer
-game.Workspace:WaitForChild("Live")
-game.Workspace.Live:WaitForChild(plr.Name)
-local Char = plr.Character
-local portal = game.workspace["Wormhole"]
-local Mouse = plr:GetMouse()
-
 
 local lplr = game:GetService("Players").LocalPlayer
 local mouse = lplr:GetMouse()
 
 mouse.KeyDown:connect(function(key)
-    if key == "k" then
-        game:GetService("TweenService"):Create(lplr.Character.HumanoidRootPart, TweenInfo.new(0.3, Enum.EasingStyle.Linear), {CFrame = CFrame.new(100, 100, 100)}):Play()
+    if key == "j" then
+    wait(.5)    game:GetService("TweenService"):Create(lplr.Character.HumanoidRootPart, TweenInfo.new(0.3, Enum.EasingStyle.Linear), {CFrame = CFrame.new(100, 100, 100)}):Play()
     end
     end)
 
 mouse.KeyDown:connect(function(key)
-    if key == "l" then
+    if key == "j" then
         local action = lplr.Character.SuperAction
         action:Destroy()
     end
