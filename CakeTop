@@ -23,7 +23,7 @@ PetTime = 1;
 AutoSenzu = true;
 ByPassExplosiveWave = true;
 Noslow = true;
-RejoinTime = 100;
+RejoinTime = 1000;
 HideQueue = false;
 TOP = "Normal"; --[ Normal / Hard ]--
 
