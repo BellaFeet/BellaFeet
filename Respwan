@@ -1,9 +1,3 @@
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Bella's Power";
-    Text = "Put Dragon Throw on 'Y'";
-    })
-
-
 local plr = game:GetService("Players").LocalPlayer
 game.Workspace:WaitForChild("Live")
 game.Workspace.Live:WaitForChild(plr.Name)
