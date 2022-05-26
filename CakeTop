@@ -1,3 +1,10 @@
+local plr = game:GetService("Players").LocalPlayer
+game.Workspace:WaitForChild("Live")
+game.Workspace.Live:WaitForChild(plr.Name)
+local Char = plr.Character
+local portal = game.workspace["Wormhole"]
+local Mouse = plr:GetMouse()
+
 -----------------------------------------------------------------------------------------------------
 -------------------------------------------Made By NabilDr#488/Creado por NabilDr#4888---------------
 
@@ -23,7 +30,7 @@ PetTime = 1;
 AutoSenzu = true;
 ByPassExplosiveWave = true;
 Noslow = true;
-RejoinTime = 100;
+RejoinTime = 1000;
 HideQueue = false;
 TOP = "Normal"; --[ Normal / Hard ]--
 
