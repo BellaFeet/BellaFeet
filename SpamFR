@@ -2,7 +2,7 @@ prefix = {'1'};
 
 movesetup = {
 'TS Molotov','Trash???','Anger Rush','Meteor Crash',
-'Kick Barrage','Wolf Fang Fist','Neo Wolf Fang Fist','Flash Skewer','Mach Kick'
+'Kick Barrage','Wolf Fang Fist','Neo Wolf Fang Fist','Flash Skewer','Mach Kick','Trash?','God Slicer',
 };
 
 lplr=game.Players.LocalPlayer;
@@ -20,7 +20,7 @@ end);
 function movespamfunction()
 while spam do wait()
    for i,v in pairs(lplr.Backpack:GetChildren()) do
-       if v.Name==movesetup[1] or v.Name==movesetup[2] or v.Name==movesetup[3] or v.Name==movesetup[4] or v.Name==movesetup[5] or v.Name==movesetup[6] or v.Name==movesetup[7] or v.Name==movesetup[8] then
+       if v.Name==movesetup[1] or v.Name==movesetup[2] or v.Name==movesetup[3] or v.Name==movesetup[4] or v.Name==movesetup[5] or v.Name==movesetup[6] or v.Name==movesetup[7] or v.Name==movesetup[8] or v.Name==movesetup[8] or v.Name==movesetup[9] or v.Name==movesetup[10] or v.Name==movesetup[8] then
           v.Parent = lplr.Character wait() v:Activate() v:Deactivate()
           v.Parent = lplr.Backpack
           end;
