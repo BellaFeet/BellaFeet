@@ -5,13 +5,12 @@ local Char = plr.Character
 local portal = game.workspace["Wormhole"]
 local Mouse = plr:GetMouse()
 
-
 game:GetService("RunService").RenderStepped:connect(
     function()
 Mouse.KeyDown:connect(function(Key)
     Key = Key:lower()
     if Key == "y" then
-       wait(1) game:GetService("TweenService"):Create(
+    wait(1)game:GetService("TweenService"):Create(
            game.Players.LocalPlayer.Character.HumanoidRootPart,
            TweenInfo.new(1.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),
            {CFrame = CFrame.new(2656.7854, 3946.00439, -2515.78467, 0.969526529, 0, -0.244986445, -0, 1, -0, 0.244986445, 0, 0.969526529)}
@@ -22,7 +21,7 @@ end)
 
 
         function respawnx()
-           wait(5) local args = {
+        wait(3)local args = {
                 [1] = workspace.FriendlyNPCs:FindFirstChild("Hair Stylist")
                 }
             game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(unpack(args))
