@@ -2,11 +2,6 @@
 --(By: helpguestslikeme)--
 --(Version 2.1)--
 
-game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Bella's Power";
-	Text = "Press J";
-})
-
 local lplr = game:GetService("Players").LocalPlayer
 local mouse = lplr:GetMouse()
 
