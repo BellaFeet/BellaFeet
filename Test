@@ -1,5 +1,5 @@
-local Slot="Slot1" --the one that will be used as a dummy for stats(namekian)
-local PointSlot="Slot2" --the one that gets the points
+local Slot="Slot2" --the one that will be used as a dummy for stats(namekian)
+local PointSlot="Slot1" --the one that gets the points
 
 if not game:IsLoaded() then
     game.Loaded:Wait()
