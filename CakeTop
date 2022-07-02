@@ -11,7 +11,7 @@ Settings  = {
 
 AutoWish = true;
 Wish = "Zenni";
-ChargeForm = 0;
+ChargeForm = 1;
 FormType = "h";
 ExtraTime = 0;
 AutoPunchLowKi = true;
@@ -24,7 +24,7 @@ ByPassExplosiveWave = true;
 Noslow = true;
 RejoinTime = 180;
 HideQueue = true;
-TOP = "Hard";
+TOP = "Normal";
 MultiFarmAcctounts = false;
 IDPlayer = 324552424;
 AutoBuy = true;
